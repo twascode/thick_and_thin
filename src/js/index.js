@@ -5,7 +5,7 @@
 var rellax = new Rellax(".rellax");
 var controller = new ScrollMagic.Controller();
 
-gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
+gsap.registerPlugin(ScrollTrigger, MotionPathPlugin, TextPlugin);
 gsap.config({ trialWarn: false });
 
 gsap.defaults({ ease: "none" });
@@ -20,12 +20,31 @@ new ScrollMagic.Scene({
 })
   .setClassToggle("#spark1", "visible") // add class to reveal
   .addTo(controller);
+new ScrollMagic.Scene({
+  triggerElement: "#topo",
+  triggerHook: 0.3, // show, when scrolled 10% into view
+  duration: "80%", // hide 10% before exiting view (80% + 10% from bottom)
+  offset: -50, // move trigger to center of element
+})
+  .setClassToggle("#topo", "visible") // add class to reveal
+  .addTo(controller);
 
 ScrollReveal().reveal("#desc", {
   duration: 1000,
   move: 0,
 });
-var main = gsap
+var chapter = gsap
+  .timeline({
+    defaults: { duration: 5 },
+    scrollTrigger: {
+      trigger: "#topo",
+      scrub: true,
+      start: "-=300",
+      end: "+=300",
+    },
+  })
+  .from("#title_chapter", { duration: 3, text: "" });
+var ded = gsap
   .timeline({
     defaults: { duration: 5 },
     scrollTrigger: {
@@ -51,7 +70,7 @@ var main = gsap
     },
     0
   );
-var main2 = gsap
+var ded2 = gsap
   .timeline({
     defaults: { duration: 5 },
     scrollTrigger: {
@@ -77,7 +96,7 @@ var main2 = gsap
     },
     0
   );
-var main3 = gsap
+var ded3 = gsap
   .timeline({
     defaults: { duration: 3 },
     scrollTrigger: {
