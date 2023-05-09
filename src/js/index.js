@@ -35,15 +35,15 @@ ScrollReveal().reveal("#desc", {
 });
 var chapter = gsap
   .timeline({
-    defaults: { duration: 5 },
+    defaults: { duration: 10 },
     scrollTrigger: {
       trigger: "#topo",
       scrub: true,
-      start: "-=400",
+      start: "-=300",
       end: "+=250",
     },
   })
-  .from("#title_chapter", { duration: 3, text: "" });
+  .from("#title_chapter", { duration: 10, text: "" });
 var ded = gsap
   .timeline({
     defaults: { duration: 5 },
