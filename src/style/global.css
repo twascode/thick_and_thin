@@ -40,7 +40,7 @@ body p {
 
     height: 100%;
     pointer-events: none;
-    background-image: url("/src/assets/images/noise.png");
+    background-image: url("../assets/images/noise.png");
     z-index: 2;
 }
 .bg-topo{
@@ -53,7 +53,7 @@ body p {
     height: 100%;
     pointer-events: none;
     background-color: #202020;
-    background-image: url("/src/assets/images/topo.webp");
+    background-image: url("../assets/images/topo.webp");
 }
 #topo{
     opacity: 0;
