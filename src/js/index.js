@@ -39,8 +39,8 @@ var chapter = gsap
     scrollTrigger: {
       trigger: "#topo",
       scrub: true,
-      start: "-=300",
-      end: "+=300",
+      start: "-=400",
+      end: "+=250",
     },
   })
   .from("#title_chapter", { duration: 3, text: "" });
