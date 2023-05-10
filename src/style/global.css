@@ -30,6 +30,7 @@ body {
 }
 body p {
     font-family: 'Gloria Hallelujah', cursive;
+    margin: 0;
 }
 
 .noise {
@@ -62,6 +63,7 @@ body p {
             -ms-transform:   scale3d(0);
              -o-transform:    scale3d(0);
                     transform:   scale3d(0);
+                    transition: all 2s ease;
 }
 #topo.visible{
     opacity: 0.5;
@@ -70,7 +72,55 @@ body p {
 				-ms-transform:   scale3d(1);
 				 -o-transform:    scale3d(1);
 						transform:   scale3d(1);
+                        transition: all 2s ease;
 }
+.spark2 {
+    position: relative;
+    width: 1.25rem;
+    height: 1.25rem;
+    /* background-color: #9880ff;
+    color: #9880ff; */
+    background-image: url("../assets/images/spark.webp");
+    animation: dot-flashing 1s infinite linear alternate;
+    animation-delay: 0.5s;
+  }
+  .spark2-before, .spark2-after {
+    content: "";
+    display: inline-block;
+    position: relative;
+    top: 0;
+  }
+  .dot-flashing .spark2-before {
+    left: -10px;
+    width: 1.25rem;
+    height: 1.25rem;
+    /* background-color: #9880ff;
+    color: #9880ff; */
+    background-image: url("../assets/images/spark.webp");
+    animation: dot-flashing 1s infinite alternate;
+    animation-delay: 0s;
+  }
+  .dot-flashing .spark2-after {
+    left: 10px;
+    width: 1.25rem;
+    height: 1.25rem;
+    /* background-color: #9880ff;
+    color: #9880ff; */
+    background-image: url("../assets/images/spark.webp");
+    animation: dot-flashing 1s infinite alternate;
+    animation-delay: 1s;
+  }
+  
+  @keyframes dot-flashing {
+    0% {
+        opacity: 0.7;
+      /* background-color: #9880ff; */
+    }
+    50%, 100% {
+        opacity: 0.3;
+      /* background-color: rgba(152, 128, 255, 0.2); */
+    }
+  }
 /* #desc {
     opacity: 0;
     -webkit-transform: scale3d(0.1);

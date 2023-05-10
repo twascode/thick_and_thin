@@ -9,6 +9,7 @@ gsap.registerPlugin(ScrollTrigger, MotionPathPlugin, TextPlugin);
 gsap.config({ trialWarn: false });
 
 gsap.defaults({ ease: "none" });
+// smoothScroll(".bd");
 
 ScrollReveal({ reset: true });
 
