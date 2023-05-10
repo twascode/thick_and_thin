@@ -8,8 +8,8 @@ var controller = new ScrollMagic.Controller();
 gsap.registerPlugin(
   ScrollTrigger,
   MotionPathPlugin,
-  TextPlugin,
-  ScrollSmoother
+  TextPlugin
+  // ScrollSmoother
 );
 gsap.config({ trialWarn: false });
 
@@ -17,10 +17,12 @@ gsap.defaults({ ease: "none" });
 // smoothScroll(".bd");
 ScrollTrigger.normalizeScroll(true);
 
-let smoother = ScrollSmoother.create({
-  smooth: 2,
-  effects: true,
-});
+// let smoother = ScrollSmoother.create({
+//   smooth: 2,
+//   effects: true,
+// });
+
+smoothScroll({ duration: 700 });
 
 ScrollReveal({ reset: true });
 
