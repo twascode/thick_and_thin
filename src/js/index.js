@@ -5,11 +5,22 @@
 var rellax = new Rellax(".rellax");
 var controller = new ScrollMagic.Controller();
 
-gsap.registerPlugin(ScrollTrigger, MotionPathPlugin, TextPlugin);
+gsap.registerPlugin(
+  ScrollTrigger,
+  MotionPathPlugin,
+  TextPlugin,
+  ScrollSmoother
+);
 gsap.config({ trialWarn: false });
 
 gsap.defaults({ ease: "none" });
 // smoothScroll(".bd");
+ScrollTrigger.normalizeScroll(true);
+
+let smoother = ScrollSmoother.create({
+  smooth: 2,
+  effects: true,
+});
 
 ScrollReveal({ reset: true });
 
