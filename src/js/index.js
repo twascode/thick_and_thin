@@ -112,12 +112,12 @@ var ded2 = gsap
   );
 var ded3 = gsap
   .timeline({
-    defaults: { duration: 3 },
+    defaults: { duration: 5 },
     scrollTrigger: {
       trigger: "#motion2",
       scrub: true,
-      start: "-=1200",
-      end: "+=500",
+      start: "-=800",
+      end: "+=300",
     },
   })
   .to(".obj3", { duration: 3, autoAlpha: 1, ease: "circ.in" })
