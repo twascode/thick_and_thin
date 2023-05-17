@@ -136,5 +136,29 @@ var ded3 = gsap
     },
     0
   );
+ScrollTrigger.create({
+  trigger: ".pict-2",
+  start: "-=500",
+  end: "+=850",
+  toggleClass: { targets: "#pict-2l", className: "swing-in-top-bck" },
+});
+ScrollTrigger.create({
+  trigger: ".pict-1",
+  start: "-=600",
+  end: "+=1050",
+  toggleClass: {
+    targets: "#pict-1r",
+    className: "slide-in-right",
+  },
+});
+ScrollTrigger.create({
+  trigger: ".pict-1",
+  start: "-=600",
+  end: "+=1050",
+  toggleClass: {
+    targets: "#pict-1l",
+    className: "slide-in-left",
+  },
+});
 
 rellax.refresh();
