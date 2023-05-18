@@ -140,7 +140,7 @@ ScrollTrigger.create({
   trigger: ".pict-2",
   start: "-=500",
   end: "+=850",
-  toggleClass: { targets: "#pict-2l", className: "swing-in-top-bck" },
+  toggleClass: { targets: "#pict-2lr", className: "swing-in-top-bck" },
 });
 ScrollTrigger.create({
   trigger: ".pict-1",
@@ -158,6 +158,15 @@ ScrollTrigger.create({
   toggleClass: {
     targets: "#pict-1l",
     className: "slide-in-left",
+  },
+});
+ScrollTrigger.create({
+  trigger: ".pict-3",
+  start: "-=600",
+  end: "+=1050",
+  toggleClass: {
+    targets: "#pict-3lr",
+    className: "slide-in-bck-center",
   },
 });
 
