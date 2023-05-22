@@ -231,3 +231,8 @@ body p {
 #pict-4br{
   opacity: 0;
 }
+.section15{
+  background-color: var(--dark);
+  background-image: linear-gradient(to bottom, var(--dark) 0%, #202020 90%);
+  overflow: scroll;
+}
