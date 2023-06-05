@@ -28,7 +28,7 @@ body {
     color: var(--light);
     font-family: Plus Jakarta Sans;
 }
-body p {
+body #desc p {
     font-family: 'Gloria Hallelujah', cursive;
     margin: 0;
 }
@@ -173,6 +173,10 @@ body p {
 	-webkit-animation: slide-bck-center 0.45s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 	        animation: slide-bck-center 0.45s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 }
+#title_chapter{
+  font-family: 'Gloria Hallelujah', cursive;
+    margin: 0;
+}
 #pict-1r{
   opacity: 0;
 }
@@ -235,4 +239,29 @@ body p {
   background-color: var(--dark);
   background-image: linear-gradient(to bottom, var(--dark) 0%, #202020 90%);
   overflow: scroll;
+}
+#title_chapter2{
+  font-family: 'Gloria Hallelujah', cursive;
+    margin: 0;
+}
+.section19{
+  background-color: #202020;
+  background-image: linear-gradient(to bottom, #202020 0%, var(--dark) 90%);
+  overflow: scroll;
+}
+.video-js.vjs-has-started .vjs-control.vjs-close-modal {
+  opacity: 1;
+  transition: opacity .1s;
+  position: absolute;
+  margin: 16px;
+  right: 0;
+  width: 16px;
+  height: 16px;
+  background-image: url('http://icons.iconarchive.com/icons/kyo-tux/delikate/256/Close-icon.png');
+  background-size: cover;
+  cursor: pointer;
+}
+
+.video-js.vjs-ended .vjs-big-play-button {
+  display: block;
 }

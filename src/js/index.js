@@ -43,10 +43,10 @@ new ScrollMagic.Scene({
   .setClassToggle("#topo", "visible") // add class to reveal
   .addTo(controller);
 
-ScrollReveal().reveal("#desc", {
-  duration: 1000,
-  move: 0,
-});
+// ScrollReveal().reveal("#desc", {
+//   duration: 1000,
+//   move: 0,
+// });
 var chapter = gsap
   .timeline({
     defaults: { duration: 10 },
@@ -223,5 +223,45 @@ ScrollTrigger.create({
     className: "slide-in-right",
   },
 });
+videojs.getPlayer("myPlayerID").ready(function () {
+  // +++ Initialize variables and check for mobile device +++
+  var player = this,
+    playerContainer = document.getElementById("videoContainer"),
+    isMobile =
+      /Android|webOS|iPhone|BlackBerry|Windows Phone|Opera Mini|IEMobile|Mobile/i.test(
+        navigator.userAgent
+      )
+        ? true
+        : false;
 
+  if (isMobile) {
+    // +++ Define a modal close button +++
+    var CloseModal = videojs.getComponent("button");
+    var CloseModal_ = videojs.extend(CloseModal, {
+      constructor: function () {
+        CloseModal.apply(this, arguments);
+        this.addClass("vjs-close-modal");
+        this.controlText("Close video");
+      },
+      handleClick: function () {
+        playerContainer.style.maxWidth = "286px";
+      },
+    });
+
+    videojs.registerComponent("CloseModal", CloseModal_);
+    player.addChild("CloseModal", {});
+
+    // +++ When playback begins, enter full width mode +++
+    player.on("play", function () {
+      playerContainer.style.width = "100%";
+      playerContainer.style.maxWidth = "";
+    });
+  }
+
+  // +++ When playback ends, exit full width mode +++
+  player.on("ended", function () {
+    playerContainer.style.maxWidth = "286px";
+    player.currentTime(0);
+  });
+});
 rellax.refresh();

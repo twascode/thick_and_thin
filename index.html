@@ -24,6 +24,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/TextPlugin.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <!-- <script src="https://assets.codepen.io/16327/ScrollSmoother.min.js"></script> -->
+    <link href="https://unpkg.com/video.js@7/dist/video-js.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/@videojs/themes@1/dist/fantasy/index.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/gh/LieutenantPeacock/SmoothScroll@1.2.0/src/smoothscroll.min.js"
         integrity="sha384-UdJHYJK9eDBy7vML0TvJGlCpvrJhCuOPGTc7tHbA+jHEgCgjWpPbmMvmd/2bzdXU"
         crossorigin="anonymous"></script>
@@ -139,7 +141,7 @@
                     </div>
 
                 </div>
-                <div class="-mt-14 rellax px-10" data-rellax-speed="-1.5" data-rellax-percentage="0.4"
+                <div class="-mt-14 rellax px-10" id="desc" data-rellax-speed="-1.5" data-rellax-percentage="0.4"
                     data-rellax-zindex="1">
                     <p class="text-sm text-center transition-transform " id="story">Cerita ini berawal dari Rizky, Bimo,
                         Alwan,
@@ -331,7 +333,7 @@
                     <div class="pict-6 px-2 flex">
                         <img class="flex w-56 sm:w-56 -left-2 relative " id="pict-6al"
                             src="src/assets/images/chapter-1/alvin&jihan.webp" alt="" srcset="">
-                        <img class="flex sm:w-52 w-52 sm:right-0 right-4 top-2 absolute z-[11]" id="pict-6ar"
+                        <img class="flex sm:w-52 w-52 sm:right-0 right-4 top-2 absolute z-[9]" id="pict-6ar"
                             src="src/assets/images/chapter-1/berdoabaris.webp" alt="" srcset="">
                     </div>
                     <div class="pict-6 px-2 flex -mt-12">
@@ -382,17 +384,25 @@
         </div>
         <div class="section13 h-[58.125rem] d-flex  flex-column justify-center position-relative  relative">
             <div class="relative z-10">
-                <div class="pict-6 grid relative z-10">
-                    <img class="" id="pict-6lr" src="src/assets/images/chapter-1/perpisahanalirsyad.webp" alt=""
-                        srcset="">
+                <div class="mb-4">
+                    <h1 class="text-2xl font-semibold text-center">Best Moment</h1>
+                    <p class="text-sm text-center">July 2022 - December 2022</p>
                 </div>
-                <div class="-mt-5 rellax px-10" id="desc" data-rellax-speed="-1.5" data-rellax-percentage="0.4"
-                    data-rellax-zindex="1">
-                    <p class="text-sm text-center transition-transform " id="story"> Disinilah cerita ini berakhir,
-                        walaupun sekilas namun membekas. Disetiap pertemuan pasti ada perpisahan, sukses selalu untuk
-                        kalian semua yaa, Terimakasih sudah pernah memberi warna.
-                    </p>
-
+                <div class="flex justify-center rounded-2xl">
+                    <iframe width="100" height="900" src="https://www.youtube.com/embed/DvZShLzARyg"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <!-- <video id="my-video" class="video-js vjs-theme-fantasy" controls preload="auto" width="400"
+                        height="auto" poster="src/assets/images/chapter-1/thumbnail_sadarehe.webp" data-setup="{}">
+                        <source src="src/assets/videos/HIGH.mp4" type="video/mp4" />
+                        <source src="src/assets/images/chapter-1/thumbnail_sadarehe.webp" type="video/webm" />
+                        <p class="vjs-no-js">
+                            To view this video please enable JavaScript, and consider upgrading to a
+                            web browser that
+                            <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                        </p>
+                    </video> -->
                 </div>
             </div>
         </div>
@@ -436,6 +446,11 @@
                         data-rellax-percentage="0.545" data-rellax-zindex="2">
                 </div>
             </div>
+        </div>
+        <div
+            class="section18 bg-[#202020] h-[58.125rem] d-flex px-10 flex-column justify-center position-relative  relative">
+        </div>
+        <div class="section19 h-[58.125rem] d-flex px-10 flex-column justify-center position-relative  relative">
         </div>
         <div class="section4 h-[58.125rem] d-flex px-10 my-10 flex-column justify-center relative">
             <div>
@@ -487,6 +502,7 @@
 
     <!-- 👇 javascript code file 👇 -->
     <script src="src/js/index.js"></script>
+    <script src="https://vjs.zencdn.net/8.3.0/video.min.js"></script>
 </body>
 
 </html>
