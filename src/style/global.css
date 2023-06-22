@@ -234,6 +234,42 @@ body #desc p {
 #pict-4br{
   opacity: 0;
 }
+#pict-5al{
+  opacity: 0;
+}
+#pict-5ar{
+  opacity: 0;
+}
+#pict-5cl{
+  opacity: 0;
+}
+#pict-5cr{
+  opacity: 0;
+}
+#pict-5bl{
+  opacity: 0;
+}
+#pict-5br{
+  opacity: 0;
+}
+#pict-6al{
+  opacity: 0;
+}
+#pict-6ar{
+  opacity: 0;
+}
+#pict-6cl{
+  opacity: 0;
+}
+#pict-6cr{
+  opacity: 0;
+}
+#pict-6bl{
+  opacity: 0;
+}
+#pict-6br{
+  opacity: 0;
+}
 .section15{
   background-color: var(--dark);
   background-image: linear-gradient(to bottom, var(--dark) 0%, #202020 90%);
@@ -245,20 +281,4 @@ body #desc p {
 .section19{
   background-color: #202020;
   background-image: linear-gradient(to bottom, #202020 0%, var(--dark) 90%);
-}
-.video-js.vjs-has-started .vjs-control.vjs-close-modal {
-  opacity: 1;
-  transition: opacity .1s;
-  position: absolute;
-  margin: 16px;
-  right: 0;
-  width: 16px;
-  height: 16px;
-  background-image: url('http://icons.iconarchive.com/icons/kyo-tux/delikate/256/Close-icon.png');
-  background-size: cover;
-  cursor: pointer;
-}
-
-.video-js.vjs-ended .vjs-big-play-button {
-  display: block;
 }
