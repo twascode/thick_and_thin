@@ -217,21 +217,27 @@ body #desc p {
   -o-transform: translate3d(0,0,0);
 }
 #pict-4al{
+  visibility: hidden;
   opacity: 0;
 }
 #pict-4ar{
+  visibility: hidden;
   opacity: 0;
 }
 #pict-4cl{
+  visibility: hidden;
   opacity: 0;
 }
 #pict-4cr{
+  visibility: hidden;
   opacity: 0;
 }
 #pict-4bl{
+  visibility: hidden;
   opacity: 0;
 }
 #pict-4br{
+  visibility: hidden;
   opacity: 0;
 }
 #pict-5al{
