@@ -14,19 +14,19 @@ gsap.registerPlugin(
 gsap.config({ trialWarn: false });
 
 gsap.defaults({ ease: "none" });
-// smoothScroll(".bd");
+// smoothScroll("#bd");
 ScrollTrigger.normalizeScroll(true);
-ScrollTrigger.config({ 
-  limitCallbacks: true,
-  ignoreMobileResize: true
-});
 
 // let smoother = ScrollSmoother.create({
 //   smooth: 2,
 //   effects: true,
 // });
+// var scroller = new SmoothScroll({// element container to scroll
+//   scrollEase: 0.1, // scroll speed
+//   maxOffset: 500
+// });
 
-smoothScroll({duration: 1 });
+smoothScroll({duration: 99999999999 });
 
 ScrollReveal({ reset: true });
 
