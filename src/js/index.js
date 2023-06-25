@@ -15,7 +15,7 @@ gsap.config({ trialWarn: false });
 
 gsap.defaults({ ease: "none" });
 // smoothScroll(".bd");
-// ScrollTrigger.normalizeScroll(true);
+ScrollTrigger.normalizeScroll(true);
 ScrollTrigger.config({ 
   limitCallbacks: true,
   ignoreMobileResize: true
