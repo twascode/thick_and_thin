@@ -218,63 +218,57 @@ body #desc p {
 }
 #pict-4al{
   visibility: hidden;
-  opacity: 0;
 }
 #pict-4ar{
   visibility: hidden;
-  opacity: 0;
 }
 #pict-4cl{
   visibility: hidden;
-  opacity: 0;
 }
 #pict-4cr{
   visibility: hidden;
-  opacity: 0;
 }
 #pict-4bl{
   visibility: hidden;
-  opacity: 0;
 }
 #pict-4br{
   visibility: hidden;
-  opacity: 0;
 }
 #pict-5al{
-  opacity: 0;
+  visibility: hidden;
 }
 #pict-5ar{
-  opacity: 0;
+  visibility: hidden;
 }
 #pict-5cl{
-  opacity: 0;
+  visibility: hidden;
 }
 #pict-5cr{
-  opacity: 0;
+  visibility: hidden;
 }
 #pict-5bl{
-  opacity: 0;
+  visibility: hidden;
 }
 #pict-5br{
-  opacity: 0;
+  visibility: hidden;
 }
 #pict-6al{
-  opacity: 0;
+  visibility: hidden;
 }
 #pict-6ar{
-  opacity: 0;
+  visibility: hidden;
 }
 #pict-6cl{
-  opacity: 0;
+  visibility: hidden;
 }
 #pict-6cr{
-  opacity: 0;
+  visibility: hidden;
 }
 #pict-6bl{
-  opacity: 0;
+  visibility: hidden;
 }
 #pict-6br{
-  opacity: 0;
+  visibility: hidden;
 }
 .section15{
   background-color: var(--dark);

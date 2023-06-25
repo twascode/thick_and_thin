@@ -15,14 +15,18 @@ gsap.config({ trialWarn: false });
 
 gsap.defaults({ ease: "none" });
 // smoothScroll(".bd");
-ScrollTrigger.normalizeScroll(true);
+// ScrollTrigger.normalizeScroll(true);
+ScrollTrigger.config({ 
+  limitCallbacks: true,
+  ignoreMobileResize: true
+});
 
 // let smoother = ScrollSmoother.create({
 //   smooth: 2,
 //   effects: true,
 // });
 
-smoothScroll({ duration: 700 });
+smoothScroll({duration: 1 });
 
 ScrollReveal({ reset: true });
 
