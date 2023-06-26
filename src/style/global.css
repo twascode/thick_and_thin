@@ -11,6 +11,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 :root {
@@ -22,8 +23,11 @@ body {
 .bd {
     background-color: var(--dark);
     max-width: 31.25rem;
+    overflow: hidden;
+    z-index: 10;
   }
 body {
+  background-color: var(--dark);
     width: 100%;
     color: var(--light);
     font-family: Plus Jakarta Sans;
@@ -36,8 +40,8 @@ body #desc p {
 .noise {
     position: fixed;
     width: 100%;
-    left: 50;
-    max-width: 31.25rem;
+    left: 0;
+    /* max-width: 31.25rem; */
 
     height: 100%;
     pointer-events: none;
