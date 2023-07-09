@@ -314,6 +314,15 @@ body #desc p {
 #pict-9br{
   visibility: hidden;
 }
+#pict-10alr {
+  visibility: hidden;
+}
+#pict-10bl {
+  visibility: hidden;
+}
+#pict-10br {
+  visibility: hidden;
+}
 .section15{
   background-color: var(--dark);
   background-image: linear-gradient(to bottom, var(--dark) 0%, #202020 90%);
