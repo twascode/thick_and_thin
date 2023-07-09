@@ -323,6 +323,23 @@ body #desc p {
 #pict-10br {
   visibility: hidden;
 }
+.pict-11 {
+  perspective: 500px;
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+}
+#pict-11bl {
+  visibility: hidden;
+}
+#pict-11bm {
+  visibility: hidden;
+}
+#pict-11br {
+  visibility: hidden;
+}
 .section15{
   background-color: var(--dark);
   background-image: linear-gradient(to bottom, var(--dark) 0%, #202020 90%);
