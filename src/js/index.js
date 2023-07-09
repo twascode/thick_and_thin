@@ -381,4 +381,40 @@ ScrollTrigger.create({
     className: "slide-in-right",
   },
 });
+ScrollTrigger.create({
+  trigger: ".pict-9",
+  start: "-=600",
+  end: "+=1050",
+  toggleClass: {
+    targets: "#pict-9alr",
+    className: "slide-in-top",
+  },
+});
+ScrollTrigger.create({
+  trigger: ".pict-9",
+  start: "-=600",
+  end: "+=1050",
+  toggleClass: {
+    targets: "#pict-9bl",
+    className: "slide-in-bl",
+  },
+});
+ScrollTrigger.create({
+  trigger: ".pict-9",
+  start: "-=600",
+  end: "+=1050",
+  toggleClass: {
+    targets: "#pict-9bm",
+    className: "slide-in-bottom",
+  },
+});
+ScrollTrigger.create({
+  trigger: ".pict-9",
+  start: "-=600",
+  end: "+=1050",
+  toggleClass: {
+    targets: "#pict-9br",
+    className: "slide-in-br",
+  },
+});
 rellax.refresh();
