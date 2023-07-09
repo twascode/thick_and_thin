@@ -78,6 +78,25 @@ body #desc p {
 						transform:   scale3d(1);
                         transition: all 2s ease;
 }
+#topo-2 {
+  opacity: 0;
+  -webkit-transform: scale3d(0);
+  -moz-transform: scale3d(0);
+  -ms-transform: scale3d(0);
+  -o-transform: scale3d(0);
+  transform: scale3d(0);
+  transition: all 2s ease;
+}
+
+#topo-2.visible {
+  opacity: 0.5;
+  -webkit-transform: scale3d(1);
+  -moz-transform: scale3d(1);
+  -ms-transform: scale3d(1);
+  -o-transform: scale3d(1);
+  transform: scale3d(1);
+  transition: all 2s ease;
+}
 .spark2 {
     position: relative;
     width: 1.25rem;

@@ -46,6 +46,14 @@ new ScrollMagic.Scene({
 })
   .setClassToggle("#topo", "visible") // add class to reveal
   .addTo(controller);
+new ScrollMagic.Scene({
+  triggerElement: "#topo-2",
+  triggerHook: 0.3, // show, when scrolled 10% into view
+  duration: "80%", // hide 10% before exiting view (80% + 10% from bottom)
+  offset: -50, // move trigger to center of element
+})
+  .setClassToggle("#topo-2", "visible") // add class to reveal
+  .addTo(controller);
 
 // ScrollReveal().reveal("#desc", {
 //   duration: 1000,
@@ -62,6 +70,17 @@ var chapter = gsap
     },
   })
   .from("#title_chapter", { duration: 10, text: "" });
+var chapter2 = gsap
+  .timeline({
+    defaults: { duration: 10 },
+    scrollTrigger: {
+      trigger: "#topo-2",
+      scrub: true,
+      start: "-=300",
+      end: "+=250",
+    },
+  })
+  .from("#title_chapter2", { duration: 10, text: "" });
 var ded = gsap
   .timeline({
     defaults: { duration: 5 },
