@@ -354,4 +354,31 @@ ScrollTrigger.create({
     className: "slide-in-right",
   },
 });
+ScrollTrigger.create({
+  trigger: ".pict-8",
+  start: "-=600",
+  end: "+=1050",
+  toggleClass: {
+    targets: "#pict-8alr",
+    className: "slide-in-top",
+  },
+});
+ScrollTrigger.create({
+  trigger: ".pict-8",
+  start: "-=600",
+  end: "+=1050",
+  toggleClass: {
+    targets: "#pict-8bl",
+    className: "slide-in-left",
+  },
+});
+ScrollTrigger.create({
+  trigger: ".pict-8",
+  start: "-=600",
+  end: "+=1050",
+  toggleClass: {
+    targets: "#pict-8br",
+    className: "slide-in-right",
+  },
+});
 rellax.refresh();
