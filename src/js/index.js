@@ -1,5 +1,17 @@
 // MUSIC BACKSOUND
+var myAudio = document.getElementById("myAudio");
+var isPlaying = false;
 
+function togglePlay() {
+  isPlaying ? myAudio.pause() : myAudio.play();
+}
+
+myAudio.onplaying = function () {
+  isPlaying = true;
+};
+myAudio.onpause = function () {
+  isPlaying = false;
+};
 // MOTION AND PARALAX
 
 var rellax = new Rellax(".rellax");
@@ -26,7 +38,7 @@ ScrollTrigger.normalizeScroll(true);
 //   maxOffset: 500
 // });
 
-smoothScroll({duration: 99999999999 });
+smoothScroll({ duration: 99999999999 });
 
 ScrollReveal({ reset: true });
 
