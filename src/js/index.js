@@ -93,6 +93,17 @@ var chapter2 = gsap
     },
   })
   .from("#title_chapter2", { duration: 10, text: "" });
+var end = gsap
+  .timeline({
+    defaults: { duration: 20 },
+    scrollTrigger: {
+      trigger: "#topo-3",
+      scrub: true,
+      start: "-=400",
+      end: "+=250",
+    },
+  })
+  .from("#title_end", { duration: 25, text: "" });
 var ded = gsap
   .timeline({
     defaults: { duration: 5 },
